@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Been Together</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=DM+Sans:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="hearts" id="hearts" aria-hidden="true"></div>
+    <main>
+      <div class="info">
+        <div class="infocard" aria-label="Date, time and weather">
+          <div class="side l">
+            <small>Phnom Penh</small><b id="tPP">--&deg;C</b>
+          </div>
+          <div class="mid">
+            <span id="dDate"></span><b class="tm" id="dTime"></b>
+          </div>
+          <div class="side r">
+            <small>Siem Reap</small><b id="tSR">--&deg;C</b>
+          </div>
+        </div>
+      </div>
+      <div class="avs">
+        <span class="topheart" aria-hidden="true">♥</span>
+        <img
+          class="couple"
+          
+          src="assets/Warm Couple Portrait Cutout.png"
+          width="520"
+          height="698"
+          alt="Huo and Moly standing and holding hands"
+        />
+        <img
+          class="toys"
+          src="assets/toys.webp"
+          width="440"
+          height="440"
+          alt="Cute plush toys: a blue bear, bunny, elephant, lamb and little horse"
+        />
+      </div>
+      <div class="names">
+        <input id="a" value="HUO" aria-label="First name" maxlength="16" />
+        <span class="heart" aria-hidden="true">♥</span>
+        <input id="b" value="MOLY" aria-label="Second name" maxlength="16" />
+      </div>
+      <p class="sub">have been together for</p>
+      <section class="big">
+        <div class="n" id="days">0</div>
+        <div class="l">days of us</div>
+      </section>
+      <section class="grid" aria-live="off">
+        <div class="t"><b id="h">0</b><span>hours</span></div>
+        <div class="t"><b id="m">0</b><span>minutes</span></div>
+        <div class="t"><b id="s">0</b><span>seconds</span></div>
+        <div class="t"><b id="w">0</b><span>weeks</span></div>
+      </section>
+      <section class="ymd" id="ymd"></section>
+      <div class="ms" id="ms"></div>
+      <div class="photos" id="photos" aria-label="Our photos"></div>
+      <div class="ms">Together since 16 Jan 2026, 2:00 AM</div>
+      <input type="date" id="date" value="2026-01-16" hidden />
+    </main>
+    <div id="intro" class="intro">
+      <div class="hearts" id="ihearts" aria-hidden="true"></div>
+      <div class="lock">
+        <span class="ih" aria-hidden="true">&#9829;</span>
+        <span class="iname">HUO &#9829; MOLY</span>
+        <span class="tap" id="hint">Enter our date</span>
+        <div class="dots" id="dots" role="img" aria-label="Password digits">
+          <i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="pad" id="pad">
+          <button type="button" data-k="1">1</button
+          ><button type="button" data-k="2">2</button
+          ><button type="button" data-k="3">3</button
+          ><button type="button" data-k="4">4</button
+          ><button type="button" data-k="5">5</button
+          ><button type="button" data-k="6">6</button
+          ><button type="button" data-k="7">7</button
+          ><button type="button" data-k="8">8</button
+          ><button type="button" data-k="9">9</button><span></span
+          ><button type="button" data-k="0">0</button
+          ><button type="button" data-k="del" aria-label="Delete">
+            &#9003;
+          </button>
+        </div>
+      </div>
+    </div>
+    <audio id="song" src="assets/music/song.mp3" loop preload="auto"></audio>
+    <button id="music" class="music" type="button" aria-label="Play music">
+      &#9834;
+    </button>
+    <script src="js/script.js"></script>
+  </body>
+</html>
